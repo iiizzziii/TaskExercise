@@ -11,7 +11,7 @@ namespace TaskTest
         static async Task Runner()
         {
             var final = await Calc();
-            System.Console.WriteLine($"4 -----{final}-----");
+            System.Console.WriteLine($"4 - ----{final}-----");
         }
 
         static async Task<int> Calc()
