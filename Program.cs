@@ -6,31 +6,26 @@ namespace TaskTest
         static async Task Main(string[] args)
         {
             await Runner();
-            System.Console.Read();
         }
 
         static async Task Runner()
         {
-            await Calc();
+            var final = await Calc();
+            System.Console.WriteLine($"4 -----{final}-----");
         }
 
-        static async Task Calc()
+        static async Task<int> Calc()
         {
-            int result2 = await Calc1_2();
+            var result1 = await Task.Run(() => {  return One();  });
 
-            Calc3(result2);
+            var result2 = await Task.Run(() => {  return Two(result1);  });
+
+            var result3 = await Task.Run(() => {  return Three(result2);  });
+
+            return result3;
         }
 
-        static async Task<int> Calc1_2()
-        {
-            var result1 = await Task.Run(() => {  return Calc1();  });
-
-            var result2 = await Task.Run(() => {  return Calc2(result1);  });
-
-            return result2;
-        }
-
-        static int Calc1()
+        static int One()
         {
             Thread.Sleep(3000);
 
@@ -41,7 +36,7 @@ namespace TaskTest
             return one;
         }
 
-        static int Calc2(int one)
+        static int Two(int one)
         {
             int two = one % 13;
 
@@ -50,11 +45,13 @@ namespace TaskTest
             return two;
         }
 
-        static void Calc3(int two)
+        static int Three(int two)
         {
-            int result = two * 3;
+            int three = two * 3;
 
-            System.Console.WriteLine($"3 - {two} * 3 = {result}");
+            System.Console.WriteLine($"3 - {two} * 3 = {three}");
+
+            return three;
         }
 
     }
