@@ -1,0 +1,15 @@
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\bin\Debug\net7.0\TaskRun_TaskWaitAll.exe
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\bin\Debug\net7.0\TaskRun_TaskWaitAll.deps.json
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\bin\Debug\net7.0\TaskRun_TaskWaitAll.runtimeconfig.json
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\bin\Debug\net7.0\TaskRun_TaskWaitAll.dll
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\bin\Debug\net7.0\TaskRun_TaskWaitAll.pdb
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\TaskRun_TaskWaitAll.csproj.AssemblyReference.cache
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\TaskRun_TaskWaitAll.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\TaskRun_TaskWaitAll.AssemblyInfoInputs.cache
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\TaskRun_TaskWaitAll.AssemblyInfo.cs
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\TaskRun_TaskWaitAll.csproj.CoreCompileInputs.cache
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\TaskRun_TaskWaitAll.dll
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\refint\TaskRun_TaskWaitAll.dll
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\TaskRun_TaskWaitAll.pdb
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\TaskRun_TaskWaitAll.genruntimeconfig.cache
+C:\Users\JakubMokos\source\repos\TaskRun_TaskWaitAll\obj\Debug\net7.0\ref\TaskRun_TaskWaitAll.dll
