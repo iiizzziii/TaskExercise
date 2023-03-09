@@ -1,49 +1,60 @@
-﻿namespace TaskTest
+﻿
+namespace TaskTest
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Test();
+            await Runner();
             System.Console.Read();
         }
 
-        async static void Test()
+        static async Task Runner()
         {
             await Calc();
         }
 
-        async static Task Calc()
+        static async Task Calc()
         {
-            await Calc1_2();
+            int result2 = await Calc1_2();
 
-            Calc3();
+            Calc3(result2);
         }
 
-        async static Task Calc1_2()
+        static async Task<int> Calc1_2()
         {
             var result1 = await Task.Run(() => {  return Calc1();  });
 
-            Calc2(result1);
+            var result2 = await Task.Run(() => {  return Calc2(result1);  });
+
+            return result2;
         }
 
         static int Calc1()
         {
             Thread.Sleep(3000);
-            System.Console.WriteLine("calculating result 1");
-            return 100;
+
+            int one = new Random().Next(1, 1000);
+
+            System.Console.WriteLine($"1 - generated int {one}");
+
+            return one;
         }
 
-        static int Calc2(int result1)
+        static int Calc2(int one)
         {
-            System.Console.WriteLine("calculating result 2");
-            return result1 * 2;
+            int two = one % 13;
+
+            System.Console.WriteLine($"2 - {one} % 13 = {two}");
+
+            return two;
         }
 
-        static int Calc3()
+        static void Calc3(int two)
         {
-            System.Console.WriteLine("calculating result 3");
-            return 300;
+            int result = two * 3;
+
+            System.Console.WriteLine($"3 - {two} * 3 = {result}");
         }
 
     }
